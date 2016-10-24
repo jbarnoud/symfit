@@ -32,4 +32,4 @@ install:
   - pip install .
   - which pytest
 # Run tests
-script: travis_wait pytest symfit/tests/*.py
+script: travis_wait ${TRAVIS_BUILD_DIR}/miniconda/envs/pyenv/bin/pytest symfit/tests/*.py
