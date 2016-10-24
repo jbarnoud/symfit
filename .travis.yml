@@ -32,4 +32,4 @@ install:
   - pip install .
   - which pytest
 # Run tests
-script: pytest symfit/tests/*.py
+script: travis_wait pytest symfit/tests/*.py
