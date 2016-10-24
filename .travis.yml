@@ -31,5 +31,6 @@ install:
   - source activate pyenv
   - pip install pytest
   - pip install .
+  - ls ./miniconda/envs/pyenv/bin
 # Run tests
 script: pytest symfit/tests/tests.py
