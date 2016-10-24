@@ -29,6 +29,7 @@ install:
       python=$TRAVIS_PYTHON_VERSION \
       numpy scipy sympy matplotlib seaborn pytest
   - source activate pyenv
+  - pip install pytest
   - pip install .
 # Run tests
-script: ${TRAVIS_BUILD_DIR}/miniconda/envs/pyenv/bin/pytest symfit/tests/tests.py
+script: pytest symfit/tests/tests.py
