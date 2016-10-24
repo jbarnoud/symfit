@@ -30,5 +30,6 @@ install:
       numpy scipy sympy matplotlib seaborn pytest
   - source activate pyenv
   - pip install .
+  - echo $PATH
 # Run tests
 script: pytest symfit/tests/*.py
